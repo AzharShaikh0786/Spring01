@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="Employee" class="com.tut.spring.Employee">
+		<property name="id" value="123" />
+		<property name="name" value="Azhar Shaikh" />
+		<property name="salary" value="2343.3" />
+	</bean>
+
+
+	<bean id="Student" class="com.tut.collection.Student">
+
+		<property name="id" value="06" />
+		<property name="courses">
+			<list>
+				<value>CSE</value>
+				<value>SOFTWARE</value>
+			</list>
+		</property>
+		<property name="number">
+			<set>
+				<value>2839</value>
+				<value>38292</value>
+			</set>
+		</property>
+	</bean>
+
+
+</beans>
